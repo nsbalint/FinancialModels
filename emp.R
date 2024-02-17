@@ -14,9 +14,9 @@ average <- function(array) {
 
 deviation <- function(array) {
   sum <- 0
-  E <- average(array)
+  avg <- average(array)
   for(i in (1:length(array))) { # nolint
-    sum <- sum + (array[i] - E)^2
+    sum <- sum + (array[i] - avg)^2
     sum <- sqrt(sum)
   }
   print(sum / length(array))

@@ -1,24 +1,24 @@
-#Empiric avarage and standard deviation calculation for an array
+#Empiric avarage and Standard Deviation calculation for an array
 
-x <- rnorm(100)
+array <- rnorm(100)
 print("100 random number: ")
-x
+array
 
-average <- function(x) {
-  s <- 0
-  for(i in (1:length(x))) { # nolint
-    s <- s + x[i]
+average <- function(array) {
+  sum <- 0
+  for(i in (1:length(array))) { # nolint
+    sum <- sum + array[i]
   }
-  print(s / length(x))
+  print(sum / length(array))
 }
 
-deviation <- function(x) {
-  s <- 0
-  e <- average(x)
-  for(i in (1:length(x))) { # nolint
-    s <- s + (x[i] - e)^2
-    s <- sqrt(s)
+deviation <- function(array) {
+  sum <- 0
+  E <- average(array)
+  for(i in (1:length(array))) { # nolint
+    sum <- sum + (array[i] - E)^2
+    sum <- sqrt(sum)
   }
-  print(s / length(x))
+  print(sum / length(array))
 }
-deviation(x)
+deviation(array)

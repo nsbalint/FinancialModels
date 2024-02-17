@@ -1,2 +1,2 @@
-# FinancialModels
-Repo for Financial Models Seminar
+# Economic and Financial Models
+Repo for Economic and Financial Models Seminar
